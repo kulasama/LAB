@@ -23,7 +23,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         python-setuptools \
         python-scipy && \
         libffi-dev && \
-        libssl-dev
+        libssl-dev && \
+        libopenblas-dev
     rm -rf /var/lib/apt/lists/*
 
 ENV CAFFE_ROOT=/opt/caffe
